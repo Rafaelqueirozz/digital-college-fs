@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Configurações gerais -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulários</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./assets/css/formulario_final.css">
+  <!-- Fonts -->
+
+</head>
+<body>
+  <h1>Criar Conta</h1>
+  <form action="" method="get">
+    <fieldset>
+      <legend>Informações Pessoais</legend>
+      <label for="nome-completo">Nome completo *</label>
+      <input type="text" name="nome-completo" id="nome-completo" required autofocus>
+
+      <label for="cpf">CPF *</label>
+      <input type="number" name="cpf" id="cpf" required>
+
+      <label for="email">E-mail *</label>
+      <input type="email" name="email" id="email" required>
+
+      <label for="celular">Celular *</label>
+      <input type="tel" name="celular" id="celular" required>
+    </fieldset>
+
+    <fieldset>
+      <legend>Informações de Entrega</legend>
+
+      <label for="endereco">Endereço *</label>
+      <input type="text" name="endereco" id="endereco" required>
+
+      <label for="bairro">Bairro *</label>
+      <input type="text" name="bairro" id="bairro" required>
+
+      <label for="cidade">Cidade *</label>
+      <input type="text" name="cidade" id="cidade" required>
+
+      <label for="cep">CEP *</label>
+      <input type="number" name="cep" id="cep" required>
+
+      <label for="complemento">Complemento</label>
+      <input type="text" name="complemento" id="complemento">
+    </fieldset>
+
+    <input type="checkbox">Quero receber por email ofertas e novidades das lojas da Digital Store. A frequência de envios pode varias de acordo com a interação do cliente.
+    <input type="submit" value="Criar Conta" class="btn">
+  </form>
+</body>
+</html>
