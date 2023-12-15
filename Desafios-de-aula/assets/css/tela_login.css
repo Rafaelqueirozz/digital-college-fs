@@ -1,0 +1,131 @@
+:root {
+  --primary-color: #3d9db3;
+  --primary-bg: #eeeeee;
+  --secondary-bg: #f6f6f6;
+  --tertiary-bg: #e1eaeb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-bg);
+  color: var(--primary-color);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-width: 400px;
+  background-color: var(--secondary-bg);
+  outline: 1px solid var(--primary-color);
+  border-radius: 6px;
+}
+
+.login-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start;
+  padding: 1em 1.25em;
+}
+
+.login-title {
+  text-align: center;
+  margin-bottom: 1.8rem;
+}
+
+.login-title::after {
+  content: '';
+  display: block;
+  width: 100%;
+  padding: .25rem 0;
+  border-bottom: 2px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    to right,
+    white,
+    rgb(84, 167, 143),
+    white
+  );
+}
+
+input[type='email'],
+input[type='password'] {
+  margin: .4em 0 1em;
+  font-size: 1.4rem;
+  padding: .8rem;
+}
+
+input[type='checkbox'] {
+  margin-bottom: 1.5em;
+}
+
+label[for='keep-login'] {
+  user-select: none;
+}
+
+.btn {
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 3px;
+  padding: .7rem;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #3d92a5;
+}
+
+.btn:active {
+  background-color: #578894;
+}
+
+.login-footer {
+  display: flex;
+  background-color: var(--tertiary-bg);
+  padding: .5em 1em;
+  overflow: hidden;
+  justify-content: flex-end;
+  gap: 1em;
+  align-items: center;
+  font-size: .8em;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn2 {
+  background-color: var(--primary-bg);
+  padding: .5em .7em;
+  border-radius: 5px;
+  border: 1.5px solid rgb(209, 209, 0);
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.btn2:hover {
+  background-color: #dfdede;
+}
+
+.btn2:active {
+  background-color: #d8d8d8;
+}
