@@ -14,22 +14,27 @@
 
 </head>
 <body>
-  <form action="" autocomplete="off">
-    <h1>Formulário de Contato - Canal TI</h1>
-
-    <label for="name">Nome</label>
-    <input type="text" id="name" autofocus>
-
-    <label for="email">Email *</label>
-    <input type="email" id="email">
-
-    <label for="subject">Assunto</label>
-    <select name="subjects" id="subject">
-      <option value="">--Selecione uma opção--</option>
-      <option value="error">Reportar Erro</option>
-      <option value="sugestion">Sugestão</option>
-      <option value="other">Outro</option>
-    </select>
-  </form>
+  <div class="container">
+    <form action="" autocomplete="off" method="get">
+      <h1>Formulário de Contato - Canal TI</h1>
+  
+      <label for="name">Nome *</label>
+      <input type="text" id="name" autofocus placeholder="Nome completo" required>
+  
+      <label for="email">Email *</label>
+      <input type="email" id="email" placeholder="exemplo@email.com" required>
+  
+      <label for="subject">Assunto *</label>
+      <select name="subjects" id="subject" required>
+        <option value="">-- Selecione uma opção --</option>
+        <option value="error">Reportar Erro</option>
+        <option value="sugestion">Sugestão</option>
+        <option value="other">Outro</option>
+      </select>
+      <label for="message">Mensagem *</label>
+      <textarea id="message" cols="30" rows="10" placeholder="Digite sua mensagem aqui" required></textarea>
+      <input type="submit" class="btn">
+    </form>
+  </div>
 </body>
 </html>
